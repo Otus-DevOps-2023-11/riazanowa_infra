@@ -16,3 +16,6 @@ Host someinternalhost
 	User appuser
 	ProxyJump bastion
 	IdentityFile ~/.ssh/id_ed25519
+
+bastion_IP = 158.160.34.38
+someinternalhost_IP = 10.128.0.11
