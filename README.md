@@ -18,7 +18,6 @@ Host bastion_vpn
 Host someinternalhost
 	HostName 10.128.0.11
 	User appuser
-	ProxyJump bastion_vpn
 	IdentityFile ~/.ssh/id_ed25519
 
 
