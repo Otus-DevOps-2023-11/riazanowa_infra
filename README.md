@@ -11,11 +11,16 @@ Host bastion
 	HostName 158.160.34.38
 	User appuser
 	IdentityFile ~/.ssh/id_ed25519
+Host bastion_vpn
+        HostName 192.168.234.1
+        User appuser
+        IdentityFile ~/.ssh/id_ed25519
 Host someinternalhost
-	HostName 10.128.0.23
+	HostName 10.128.0.11
 	User appuser
-	ProxyJump bastion
+	ProxyJump bastion_vpn
 	IdentityFile ~/.ssh/id_ed25519
+
 
 bastion_IP = 158.160.34.38
 someinternalhost_IP = 10.128.0.11
